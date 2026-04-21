@@ -31,28 +31,68 @@
 
     <div class="cards">
       <div class="card">
-        <h3>Project 1</h3>
+        <h3>A fully responsive website built using HTML, CSS, and JavaScript with a focus on modern UI/UX principles. It includes structured layout, smooth animations, and clean navigation for better user experience across devices.
+
+Technologies Used:
+
+HTML5
+CSS3
+JavaScript</h3>
         <p>Website Design</p>
       </div>
 
       <div class="card">
-        <h3>Project 2</h3>
+        <h3>An interactive personal portfolio website designed to showcase skills and projects. It includes dynamic typing effects, hover animations, and reusable components for a modern and engaging interface.
+
+Technologies Used:
+
+HTML5
+CSS3 (Animations, Flexbox)
+JavaScript (DOM Manipulation)</h3>
         <p>Portfolio UI</p>
       </div>
 
       <div class="card">
-        <h3>Project 3</h3>
+        <h3>A modern landing page built for product/service presentation with a strong focus on conversion and user engagement. It features responsive design, clear call-to-action sections, and smooth transitions.
+
+Technologies Used:
+
+HTML5
+CSS3
+JavaScript</h3>
         <p>Landing Page</p>
       </div>
     </div>
   </section>
 
   <!-- Contact -->
-  <section class="section" id="contact">
-    <h2>Contact Me</h2>
-    <button class="btn" onclick="contactMe()">Contact</button>
-  </section>
+<section class="section" id="contact">
+  <h2>Contact Me</h2>
+  <p>Feel free to reach out for collaboration 🚀</p>
 
-  <script src="script.js"></script>
+  <div class="contact-info">
+    <p>📧 Email: rs678959000@gmail.com</p>
+    <p>📍 Location: Guwahati, India</p>
+  </div>
+
+  <!-- Buttons -->
+  <button class="btn" onclick="sendWhatsApp()">WhatsApp Me</button>
+  <button class="btn" onclick="sendEmail()">Send Email</button>
+
+  <!-- Contact Form -->
+  <div class="form">
+    <input type="text" id="name" placeholder="Your Name">
+    <input type="email" id="email" placeholder="Your Email">
+    <textarea id="message" placeholder="Your Message"></textarea>
+    <button class="btn" onclick="submitForm()">Submit</button>
+  </div>
+</section>
+
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("rozmQelGta1xU16zZ");
+  })();
+</script>
 </body>
 </html>
