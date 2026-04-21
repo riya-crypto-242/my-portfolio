@@ -1,123 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #0f172a;
-            color: white;
-        }
-
-        header {
-            background: #1e293b;
-            padding: 15px;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-        }
-
-        nav a {
-            margin: 0 10px;
-            color: #38bdf8;
-            text-decoration: none;
-        }
-
-        section {
-            padding: 40px;
-            text-align: center;
-        }
-
-        .projects {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-        .card {
-            background: #1e293b;
-            padding: 20px;
-            border-radius: 10px;
-            width: 250px;
-        }
-
-        .card:hover {
-            transform: scale(1.05);
-            transition: 0.3s;
-        }
-
-        footer {
-            background: #1e293b;
-            text-align: center;
-            padding: 10px;
-        }
-
-        button {
-            background: #38bdf8;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-    <h1>Your Name</h1>
-    <p>Web Developer | Designer</p>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
-
-<section id="about">
-    <h2>About Me</h2>
-    <p>Hello! I'm Riya, a passionate web developer who enjoys creating modern and responsive websites. I love turning ideas into real projects using HTML, CSSand JavaScript. I'm currently learning and improving my skills to build better and more creative web applications.</p>
-</section>
-
-<section id="projects">
-    <h2>My Projects</h2>
-    <div class="projects">
-        <div class="card">
-            <h3>Project 1</h3>
-            <p>A responsive personal portfolio website built using HTML, CSS and JavaScript to showcase my skills and  project.</p>
-        </div>
-
-        <div class="card">
-            <h3>Project 2</h3>
-            <p>A simple and interactive calculator built using JavaScript with clean UI design.</p>
-        </div>
-
-        <div class="card">
-            <h3>Project 3</h3>
-            <p>A task management app where users can add, delete and manage daily tasks effiently.</p>
-        </div>
+  <!-- Navbar -->
+  <nav>
+    <h2>MyPortfolio</h2>
+    <div>
+      <a href="#">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
     </div>
-</section>
+  </nav>
 
-<section id="contact">
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Hello, I'm <span id="typing"></span></h1>
+    <p>Frontend Developer | Designer</p>
+    <button class="btn" onclick="hireMe()">Hire Me</button>
+  </section>
+
+  <!-- Projects -->
+  <section class="section" id="projects">
+    <h2>My Projects</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Project 1</h3>
+        <p>Website Design</p>
+      </div>
+
+      <div class="card">
+        <h3>Project 2</h3>
+        <p>Portfolio UI</p>
+      </div>
+
+      <div class="card">
+        <h3>Project 3</h3>
+        <p>Landing Page</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
     <h2>Contact Me</h2>
-    <p>Connect with me on Instagram</p>
-    <a href="http://instagram.com/riyacrypto242" target="_balnk">
-    <button class="glow-btn">Contact Me</button>
-    </a>
-    
-</section>
+    <button class="btn" onclick="contactMe()">Contact</button>
+  </section>
 
-<footer>
-    <p>© 2026 Riya kumari Singh</p>
-</footer>
-
+  <script src="script.js"></script>
 </body>
 </html>
