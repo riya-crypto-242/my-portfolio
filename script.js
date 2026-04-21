@@ -17,6 +17,22 @@ function hireMe() {
   alert("Thanks for your interest! Contact me soon 🚀");
 }
 
-function contactMe() {
-  alert("Email: rs678959000@gmail.com");
+function submitForm() {
+  let params = {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    message: document.getElementById("message").value,
+  };
+
+  if (!params.name || !params.email || !params.message) {
+    alert("Please fill all fields");
+    return;
+  }
+
+  emailjs.send("service_iftpxj6", "template_tw6wlxg", params)
+    .then(function(response) {
+      alert("Message sent successfully 🚀");
+    }, function(error) {
+      alert("Failed to send message ❌");
+    });
 }
