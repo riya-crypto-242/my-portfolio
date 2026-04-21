@@ -1,3 +1,7 @@
+// Emailjs init
+(function(){
+  emailjs.init("rozmQelGta1xU16zZ");
+})();
 // Typing effect
 const text = "Riya Kumari Singh";
 let index = 0;
