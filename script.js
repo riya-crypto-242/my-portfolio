@@ -39,4 +39,13 @@ function submitForm() {
     }, function(error) {
       alert("Failed to send message ❌");
     });
+  function sendWhatsApp() {
+  let name = document.getElementById("name").value;
+
+  let message = "Hello, my name is " + name + " I visited your portfolio.";
+
+  let url = "https://wa.me/7099728828?text=" + encodeURIComponent(message);
+
+  window.open(url, "_blank");
+}
 }
