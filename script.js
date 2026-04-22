@@ -22,13 +22,22 @@ function hireMe() {
 }
 
 function submitForm() {
+  event.preventDefault(); //
+  
   let params = {
     name: document.getElementById("name").value,
     email: document.getElementById("email").value,
     message: document.getElementById("message").value,
   };
 
-  if (!params.name || !params.email || !params.message) {
+  emailjs.send("service ", "template", param)
+     .then(function(respnse){
+       alert("Message sent successfully");
+     }, function(error) {
+       alert("Failed to send" + error.text);
+     });
+}
+ if (!params.name || !params.email || !params.message) {
     alert("Please fill all fields");
     return;
   }
