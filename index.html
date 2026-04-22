@@ -80,13 +80,13 @@ JavaScript</h3>
   <button class="btn" onclick="sendEmail()">Send Email</button>
 
   <!-- Contact Form -->
-  <div class="form">
+  <form onsubmit="submitForm(event)">
     <input type="text" id="name" placeholder="Your Name" required>
     <input type="email" id="email" placeholder="Your Email" required>
     <textarea id="message" placeholder="Your Message" required></textarea>
-    <button class="btn" onclick="submitForm()">Send</button>
-  </div>
-</section>
+    <button class="btn" type="submit">Send</button>
+  </form>
+  </section>
 
 <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script>
