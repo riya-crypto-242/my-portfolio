@@ -30,7 +30,7 @@ function submitForm() {
     message: document.getElementById("message").value,
   };
 
-  emailjs.send("service ", "template", param)
+  emailjs.send("service_iftpxj6", "template_tw6wlxg", param)
      .then(function(respnse){
        alert("Message sent successfully");
      }, function(error) {
