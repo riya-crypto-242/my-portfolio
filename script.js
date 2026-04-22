@@ -44,7 +44,7 @@ function submitForm() {
 
   let message = "Hello, my name is " + name + " I visited your portfolio.";
 
-  let url = "https://wa.me/7099728828?text=" + encodeURIComponent(message);
+  let url = "https://wa.me/917099728828?text=" + encodeURIComponent(message);
 
   window.open(url, "_blank");
 }
